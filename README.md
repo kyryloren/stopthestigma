@@ -11,7 +11,7 @@
 </p>
 <p align="center">
   <a href="https://app.netlify.com/sites/stopthestigma/deploys" target="_blank">
-    <img src="https://api.netlify.com/api/v1/badges/adc2ecf0-7158-4c08-a408-9e7cfa5ccc17/deploy-status" alt="Netlify status" />
+    <img src="https://api.netlify.com/api/v1/badges/8ccbab72-b2dd-44ad-b629-a0a4d0ab9661/deploy-status" alt="Netlify status" />
   </a>
 </p>
 

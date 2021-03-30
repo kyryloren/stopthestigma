@@ -117,13 +117,11 @@ const Resources = () => {
           rel="noopener noreferrer">
           <BoldTitle>Educate yourself</BoldTitle>
         </Col>
-        <Col>
-          <BoldTitle
-            href="https://www.washingtonpost.com/national/health-science/instagram-public-awareness-campaign-aims-for-real-talk-about-mental-health/2019/05/24/cecfba8e-7cb5-11e9-8ede-f4abf521ef17_story.html"
-            target="_blank"
-            rel="noopener noreferrer">
-            Start talking
-          </BoldTitle>
+        <Col
+          href="https://www.washingtonpost.com/national/health-science/instagram-public-awareness-campaign-aims-for-real-talk-about-mental-health/2019/05/24/cecfba8e-7cb5-11e9-8ede-f4abf521ef17_story.html"
+          target="_blank"
+          rel="noopener noreferrer">
+          <BoldTitle>Start talking</BoldTitle>
         </Col>
       </CardsWrapper>
       <Wrapper>
