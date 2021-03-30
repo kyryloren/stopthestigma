@@ -1,29 +1,42 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import React from 'react';
+import Hero from '@components/hero';
+import About from '@components/about';
+import Stats from '@components/stats';
+import Info from '@components/info';
+import Misinformation from '@components/misinformation';
+import Frequency from '@components/frequency';
+import Help from '@components/help';
+import Resources from '@components/resources';
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+const HomePage = () => {
+  return (
+    <>
+      <div data-scroll-section>
+        <Hero />
+      </div>
+      <div data-scroll-section>
+        <About />
+      </div>
+      <div data-scroll-section>
+        <Stats />
+      </div>
+      <div data-scroll-section>
+        <Info />
+      </div>
+      <div data-scroll-section>
+        <Misinformation />
+      </div>
+      <div data-scroll-section>
+        <Frequency />
+      </div>
+      <div data-scroll-section>
+        <Help />
+      </div>
+      <div data-scroll-section>
+        <Resources />
+      </div>
+    </>
+  );
+};
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
-  </Layout>
-)
-
-export default IndexPage
+export default HomePage;
