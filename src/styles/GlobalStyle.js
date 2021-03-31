@@ -121,10 +121,10 @@ const GlobalStyle = createGlobalStyle`
     height: 50px;
   }
   .highlight {
-    background-color: #262626;
-    color: #ffffff;
+    background-color: var(--deep-blue);
+    color: var(--blue);
     border-radius: 8px;
-    padding: 0.3rem;
+    padding: 0.5vw;
   }
 `;
 

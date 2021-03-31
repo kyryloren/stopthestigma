@@ -78,13 +78,13 @@ const Pos2 = styled(BubbleWrapper)`
 `;
 const Pos3 = styled(BubbleWrapper)`
   left: 15%;
-  bottom: 20%;
+  bottom: 15%;
 
   ${media.tablet`left: 5%;`};
 `;
 const Pos4 = styled(BubbleWrapper)`
   right: -45%;
-  bottom: 35%;
+  bottom: 30%;
 
   ${media.tablet`right: -30%;`};
 `;

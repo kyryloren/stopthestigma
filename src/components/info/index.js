@@ -72,7 +72,7 @@ const Info = () => {
     <StyledInfo>
       <Container>
         <RectWrapper
-          animate={scrollPos && width > 800 && !isMobile && { rotate: scrollPos / 200 - 30 }}>
+          animate={scrollPos && width > 800 && !isMobile && { rotate: scrollPos / 240 - 20 }}>
           <OverflowWrapper>
             <BoldTitle>Mental illness</BoldTitle>
           </OverflowWrapper>

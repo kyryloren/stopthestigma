@@ -143,7 +143,8 @@ const About = () => {
               delay: 1,
             }}>
             <Caption>
-              Mental health is considered one of the most neglected problems in the modern world.
+              Mental health is considered one of the{' '}
+              <span className="highlight">most neglected problems</span> in the modern world.
               Dismantling the stigma around mental illness is more important now than ever. So let’s
               educate ourselves about mental health!
             </Caption>
