@@ -79,7 +79,6 @@ const Frequency = () => {
     if (typeof window !== 'undefined') {
       setTimeout(() => {
         window.scroll.on('scroll', args => {
-          console.log(args.currentElements);
           if (args.currentElements['frequency_sticky_target']) {
             let progress = args.currentElements['frequency_sticky_target'].progress;
             setSectionProgress(progress);
