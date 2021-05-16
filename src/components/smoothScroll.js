@@ -16,27 +16,25 @@ const scroll = {
 
 const SmoothScroll = callbacks => {
   useEffect(() => {
-    setTimeout(() => {
-      let locomotiveScroll;
+    let locomotiveScroll;
 
-      locomotiveScroll = new LocomotiveScroll({
-        el: document.querySelector(scroll.container),
-        ...scroll.options,
-      });
-      locomotiveScroll.update();
+    locomotiveScroll = new LocomotiveScroll({
+      el: document.querySelector(scroll.container),
+      ...scroll.options,
+    });
+    locomotiveScroll.update();
 
-      // Exposing to the global scope for ease of use.
-      window.scroll = locomotiveScroll;
+    // Exposing to the global scope for ease of use.
+    window.scroll = locomotiveScroll;
 
-      locomotiveScroll.on('scroll', func => {
-        // Update `data-direction` with scroll direction.
-        document.documentElement.setAttribute('data-direction', func.direction);
-      });
+    locomotiveScroll.on('scroll', func => {
+      // Update `data-direction` with scroll direction.
+      document.documentElement.setAttribute('data-direction', func.direction);
+    });
 
-      return () => {
-        if (locomotiveScroll) locomotiveScroll.destroy();
-      };
-    }, 1000);
+    return () => {
+      if (locomotiveScroll) locomotiveScroll.destroy();
+    };
   }, [callbacks]);
 
   return null;
